@@ -1,6 +1,0 @@
-Guide for how to import data into excel (keeps the formatting of the excel file); multiple ways of implementing it:
-https://www.extendoffice.com/documents/excel/674-excel-export-to-html.html
-
-For the navbar, since there was no space, I decided to add a dropdown menu to decrease the space requirement. However, the formatting of it is messed up; is
-there a file where the formats are stored? I have noticed the existing navbar elements have special formatting, but they are not implemented in the same file.
-Is there a file where they are stored?
