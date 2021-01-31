@@ -30,9 +30,17 @@
   
   <script src="/audiojs/audio.min.js"></script>
   <script>
-    audiojs.events.ready(function() {
-    var as = audiojs.createAll();
-    });
+    var as = audiojs.createAll(),
+            audio = as[0],
+            ids = ['vol-0', 'vol-10', 'vol-40', 'vol-70', 'vol-100'];
+        for (var i = 0, ii = ids.length; i < ii; i++) {
+          var elem = document.getElementById(ids[i]),
+              volume = ids[i].split('-')[1];
+          elem.setAttribute('data-volume', volume / 100)
+          elem.onclick = function(e) {
+            audio.setVolume(this.getAttribute('data-volume'));
+            e.preventDefault();
+            return false;
   </script>
 
 </head>
